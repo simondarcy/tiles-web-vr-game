@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tiles: A WebVR game build with aframe.io</title>
+    <meta name="description" content="Tiles: A WebVR game build with aframe.io">
+
+    <meta property="og:title" content="Tiles: A WebVR game build with aframe.io"/>
+    <meta property="og:type" content="Article"/>
+    <meta property="og:url" content="http://simondarcyonline.com/tile-game/"/>
+    <meta property="og:image" content="tile-image.png"/>
+    <meta property="og:site_name" content="Simon Darcy Online"/>
+    <meta property="og:description" content="Tiles: A demo WebVr gaem build with aframe.io"/>
+    <meta property="og:published_time" content="2017-06-23T08:06:49+01:00"/>
+
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@sidarcy"/>
+    <meta name="twitter:title" content="Tiles: A WebVR game build with aframe.io"/>
+    <meta name="twitter:domain" content="simondarcyonline.com"/>
+    <meta name="twitter:creator" content="@sidarcy"/>
+    <meta name="twitter:description" content="Tiles: A demo WebVr gaem build with aframe.io"/>
+    <meta name="twitter:image:src" content="tile-image.png">
+    <meta name="twitter:image" content="tile-image.png"/>
+
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+    <script src="js/game.js"></script>
+
+</head>
+<body>
+<a-scene>
+
+    <a-assets>
+        <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
+        <a-asset-item id="exoFont" src="fonts/exo2Black.typeface.json"></a-asset-item>
+    </a-assets>
+
+
+
+
+    <!-- 1 -->
+
+    <!-- Parent entity -->
+    <a-box position="-2 3 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+
+        <a-animation attribute="material.opacity" delay="100" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="-1 3 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="200" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="0 3 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="300" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="1 3 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="400" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="2 3 -2" material="opacity: 0" depth="0.1" delay="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" begin="500" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+
+    <!-- 2 -->
+
+    <!-- Parent entity -->
+    <a-box position="-2 2 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="100" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="-1 2 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="200" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="0 2 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="300" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="1 2 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="400" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="2 2 -2" material="opacity: 0" depth="0.1" delay="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" begin="500" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+
+    <!-- 3 -->
+
+
+    <!-- Parent entity -->
+    <a-box position="-2 1 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="100" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="-1 1 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="200" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="0 1 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="300" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="1 1 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="400" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="2 1 -2" material="opacity: 0" depth="0.1" delay="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" begin="500" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <!-- 4 -->
+
+    <!-- Parent entity -->
+    <a-box position="-2 0 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="100" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="-1 0 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="200" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="0 0 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="300" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="1 0 -2" material="opacity: 0" depth="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" delay="400" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-box position="2 0 -2" material="opacity: 0" depth="0.1" delay="0.1" selectable width="0.8" height="0.8">
+        <a-animation attribute="material.opacity" begin="500" from="0" to="1"></a-animation>
+        <a-animation attribute="rotation" begin="show" from="0 0 0" to="0 180 0"></a-animation>
+        <a-animation attribute="rotation" begin="hide" from="0 180 0" to="0 0 0"></a-animation>
+        <a-animation attribute="scale" begin="shrink" from="1 1 1" to="0 0 0"></a-animation>
+    </a-box>  <!-- Child entity -->
+
+    <a-entity id="splash" position="-1 0.5 -2" rotation="0 0 0">
+        <a-animation attribute="visible" delay="3100" from="true" to="false" ></a-animation>
+        <a-entity id="title" position="-0.5 0.5 -0.5" scale="0.6 1.2 1" text-geometry="value: Tiles; font: #exoFont; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:pink; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;">
+            <a-animation attribute="material.opacity" delay="3000" duration="100" from="1" to="0"></a-animation>
+        </a-entity>
+    </a-entity>
+
+    <a-entity id="score" position="-0.5 -1 -2" scale="3 3 3" text="color: white; align: center; value: Score: 0; width: 1.5"></a-entity>
+    <a-entity id="timer" position="0.5 -1 -2" scale="3 3 3" text="color: white; align: center; value: Time: 00; width: 1.5"></a-entity>
+
+    <a-sky color="#000000"></a-sky>
+
+    <a-entity camera="userHeight: 1.6" look-controls>
+        <a-entity cursor="fuse: true; fuseTimeout: 1500"
+                  position="0 0 -1"
+                  geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                  material="color: #4CC3D9; shader: flat"></a-entity>
+    </a-entity>
+
+
+
+</a-scene>
+
+
+</body>
+</html>
